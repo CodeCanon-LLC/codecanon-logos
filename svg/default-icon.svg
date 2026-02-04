@@ -5,10 +5,11 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2122 2122" style="enable-background:new 0 0 2122 2122;" xml:space="preserve">
 	<defs>
 		<style>
-      .codecanon-primary { fill: var(--color-codecanon-primary, #a38768); }
-      .codecanon-secondary { fill: var(--color-codecanon-secondary, #7e6347); }
+      .codecanon-primary { fill: var(--color-codecanon-primary, #5B3B2C); }
+      .codecanon-secondary { fill: var(--color-codecanon-secondary, #44291E); }
 		</style>
 	</defs>
+
 	<g>
 		<path class="codecanon-primary" d="M435.633,1789.51c7.611,82.066,74.784,146.228,182.76,146.228c75.551,0,1068.036,0,1068.036,0
 		v-34.407c-5.466,0-13.203,0-22.938,0v-36.885V1646.15c9.738,0,17.47,0,22.938,0v-34.406V186.739H638.092
@@ -123,7 +124,7 @@
 
 
 		<g transform="translate(910, 400)">
-			<svg xmlns="http://www.w3.org/2000/svg" width="500px" height="500px" viewBox="0 0 24 24" fill="none" stroke="#7e6347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml">
+			<svg xmlns="http://www.w3.org/2000/svg" width="500px" height="500px" viewBox="0 0 24 24" fill="none" stroke="#44291e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml">
 				<path d="m18 16 4-4-4-4"/>
 				<path d="m6 8-4 4 4 4"/>
 				<path d="m14.5 4-5 16"/>
