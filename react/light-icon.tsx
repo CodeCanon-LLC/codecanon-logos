@@ -1,5 +1,5 @@
+import { PRIMARY_DEFAULT_COLOR, SECONDARY_DEFAULT_COLOR } from "@/config";
 import * as React from "react";
-import { PRIMARY_DARK_COLOR, SECONDARY_DARK_COLOR } from '@/config'
 
 const SVGComponent = (props: React.ComponentProps<'svg'>) => (
 	<svg
@@ -14,8 +14,8 @@ const SVGComponent = (props: React.ComponentProps<'svg'>) => (
 	>
 		<defs>
 			<style>
-				{`.codecanon-primary { fill: var(--color-codecanon-primary, ${PRIMARY_DARK_COLOR}); }`}
-				{`.codecanon-secondary { fill: var(--color-codecanon-secondary, ${SECONDARY_DARK_COLOR}); }`}
+				{`.codecanon-primary { fill: var(--color-codecanon-primary, ${PRIMARY_DEFAULT_COLOR}); }`}
+				{`.codecanon-secondary { fill: var(--color-codecanon-secondary, ${SECONDARY_DEFAULT_COLOR}); }`}
 			</style>
 		</defs>
 		<g>
@@ -143,7 +143,7 @@ const SVGComponent = (props: React.ComponentProps<'svg'>) => (
 					height="500px"
 					viewBox="0 0 24 24"
 					fill="none"
-					stroke="#7e6347"
+					stroke="#44291e"
 					strokeWidth={2}
 					strokeLinecap="round"
 					strokeLinejoin="round"

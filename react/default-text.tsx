@@ -1,12 +1,14 @@
+import { DIACRITIC_DARK_COLOR, DIACRITIC_DEFAULT_COLOR, LETTER_DARK_COLOR, LETTER_DEFAULT_COLOR } from "@/config";
 import * as React from "react";
 
 const SVGComponent = (props: React.ComponentProps<'svg'>) => (
   <svg viewBox="0 0 1600 896" xmlns="http://www.w3.org/2000/svg" {...props}>
     <defs>
       <style>
-        {
-          "\n      .codecanon-letter { fill: var(--color-codecanon-letter, var(--color-codecanon-primary, #6B4E3D)); }\n      .codecanon-diacritic { fill: var(--color-codecanon-diacritic, var(--color-codecanon-secondary, #7D6A56)); }\n    "
-        }
+        {`.codecanon-letter { fill: var(--color-codecanon-letter, var(--color-codecanon-primary, ${LETTER_DEFAULT_COLOR})); }`}
+        {`.codecanon-diacritic { fill: var(--color-codecanon-diacritic, var(--color-codecanon-secondary, ${DIACRITIC_DEFAULT_COLOR})); }`}
+        {`.dark .codecanon-letter { fill: var(--color-codecanon-letter, var(--color-codecanon-primary, ${LETTER_DARK_COLOR})); }`}
+        {`.dark .codecanon-diacritic { fill: var(--color-codecanon-diacritic, var(--color-codecanon-secondary, ${DIACRITIC_DARK_COLOR})); }`}
       </style>
     </defs>
     <rect

@@ -11,7 +11,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": ["index.ts", "react/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
