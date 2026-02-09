@@ -15,7 +15,12 @@ npm install @codecanon/logos
 Use the ready-made React components:
 
 ```tsx
-import { CodeCanonIcon, CodeCanonText, CodeCanonDarkIcon, CodeCanonDarkText } from '@codecanon/logos';
+import {
+  CodeCanonIcon,
+  CodeCanonText,
+  CodeCanonDarkIcon,
+  CodeCanonDarkText,
+} from "@codecanon/logos"
 
 function App() {
   return (
@@ -23,7 +28,7 @@ function App() {
       <CodeCanonIcon />
       <CodeCanonText />
     </div>
-  );
+  )
 }
 ```
 
@@ -32,10 +37,10 @@ function App() {
 Import PNG file paths:
 
 ```tsx
-import CodeCanonImage from '@codecanon/logos/png/default.png';
+import CodeCanonImage from "@codecanon/logos/png/default.png"
 
 function Logo() {
-  return <img src={CodeCanonImage} alt="CodeCanon Logo" />;
+  return <img src={CodeCanonImage} alt="CodeCanon Logo" />
 }
 ```
 
@@ -44,7 +49,7 @@ function Logo() {
 ### React with Icon
 
 ```tsx
-import { CodeCanonIcon } from '@codecanon/logos';
+import { CodeCanonIcon } from "@codecanon/logos"
 
 function Header() {
   return (
@@ -52,31 +57,31 @@ function Header() {
       <CodeCanonIcon />
       <h1>My App</h1>
     </header>
-  );
+  )
 }
 ```
 
 ### React with Text Logo
 
 ```tsx
-import { CodeCanonText, CodeCanonDarkText } from '@codecanon/logos';
+import { CodeCanonText, CodeCanonDarkText } from "@codecanon/logos"
 
 function Logo({ darkMode }: { darkMode: boolean }) {
-  return darkMode ? <CodeCanonDarkText /> : <CodeCanonText />;
+  return darkMode ? <CodeCanonDarkText /> : <CodeCanonText />
 }
 ```
 
 ### Express Server with PNG
 
 ```typescript
-import express from 'express';
-import CodeCanonImage from '@codecanon/logos/png/default.png';
+import express from "express"
+import CodeCanonImage from "@codecanon/logos/png/default.png"
 
-const app = express();
+const app = express()
 
-app.get('/logo', (req, res) => {
-  res.sendFile(CodeCanonImage);
-});
+app.get("/logo", (req, res) => {
+  res.sendFile(CodeCanonImage)
+})
 ```
 
 ### Styling the Logos
@@ -100,12 +105,14 @@ The SVG logos use CSS custom properties for colors. You can override them:
 ## Available Exports
 
 ### React Components (SVG)
+
 - `CodeCanonIcon` - Default icon logo component
 - `CodeCanonDarkIcon` - Dark theme icon logo component
 - `CodeCanonText` - Default text logo component
 - `CodeCanonDarkText` - Dark theme text logo component
 
 ### PNG Images (file paths)
+
 - `CodeCanonImage` - Default logo
 - `CodeCanonDarkImage` - Dark theme logo
 - `CodeCanonCircleImage` - Circle variant logo
