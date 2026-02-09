@@ -10,6 +10,8 @@ const SVGComponent = (props: React.ComponentProps<'svg'>) => (
 		y="0px"
 		viewBox="0 0 2122 2122"
 		xmlSpace="preserve"
+		width="24px"
+		height="24px"
 		{...props}
 	>
 		<defs>

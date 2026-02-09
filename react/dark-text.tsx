@@ -2,7 +2,7 @@ import { DIACRITIC_DARK_COLOR, LETTER_DARK_COLOR } from "@/config";
 import * as React from "react";
 
 const SVGComponent = (props: React.ComponentProps<'svg'>) => (
-  <svg viewBox="0 0 1600 896" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg viewBox="0 0 1600 896" xmlns="http://www.w3.org/2000/svg" height="24px" {...props}>
     <defs>
       <style>
         {`.codecanon-letter { fill: var(--color-codecanon-letter, var(--color-codecanon-primary, ${LETTER_DARK_COLOR})); }`}
