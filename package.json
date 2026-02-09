@@ -1,0 +1,48 @@
+{
+  "name": "@codecanon/logos",
+  "version": "1.0.0",
+  "description": "CodeCanon logo assets in SVG and PNG formats",
+  "keywords": [
+    "codecanon",
+    "logos",
+    "assets",
+    "svg",
+    "png"
+  ],
+  "homepage": "https://github.com/codecanon/codecanon-logos#readme",
+  "bugs": {
+    "url": "https://github.com/codecanon/codecanon-logos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecanon/codecanon-logos.git"
+  },
+  "license": "MIT",
+  "author": "Abdelrahman Salem",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "svg",
+    "png",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Source files
+index.ts
+tsconfig.json
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.DS_Store
+
+# Node
+node_modules
