@@ -29,13 +29,14 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
-    "typescript": "^5.3.3",
     "@types/node": "^20.11.0",
-    "@types/react": "^18.2.0"
+    "@types/react": "^18.2.0",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
