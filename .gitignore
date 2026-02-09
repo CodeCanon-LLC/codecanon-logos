@@ -1,4 +1,6 @@
 .DS_Store
+.npmrc
+!.npmrc.example
 
 node_modules/
 dist/

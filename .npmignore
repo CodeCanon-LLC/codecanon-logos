@@ -12,3 +12,6 @@ tsconfig.json
 
 # Node
 node_modules
+
+# NPM
+.npmrc
