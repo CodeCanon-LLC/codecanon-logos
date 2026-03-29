@@ -20,8 +20,22 @@
   "license": "MIT",
   "author": "Abdelrahman Salem",
   "type": "commonjs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
   "files": [
     "dist",
     "svg",
@@ -29,16 +43,21 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && tsc-alias",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "format": "prettier . --write",
+    "release": "bumpp && pnpm publish",
+    "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
+    "bumpp": "^11.0.1",
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tsc-alias": "^1.8.16",
+    "tsdown": "^0.21.7",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
