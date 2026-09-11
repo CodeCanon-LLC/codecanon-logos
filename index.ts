@@ -5,4 +5,11 @@ export { default as CodeCanonLightText } from "@/react/light-text"
 export { default as CodeCanonIcon } from "@/react/default-icon"
 export { default as CodeCanonText } from "@/react/default-text"
 
+export { default as SalezDarkIcon } from "@/react/salez-dark-icon"
+export { default as SalezDarkText } from "@/react/salez-dark-text"
+export { default as SalezLightIcon } from "@/react/salez-light-icon"
+export { default as SalezLightText } from "@/react/salez-light-text"
+export { default as SalezIcon } from "@/react/salez-icon"
+export { default as SalezText } from "@/react/salez-text"
+
 export * from "@/config"
