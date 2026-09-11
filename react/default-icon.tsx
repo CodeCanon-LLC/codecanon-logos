@@ -160,7 +160,6 @@ const SVGComponent = (props: React.ComponentProps<"svg">) => {
 						strokeLinecap="round"
 						strokeLinejoin="round"
 						className="lucide lucide-code-xml-icon lucide-code-xml"
-						{...props}
 					>
 						<path d="m18 16 4-4-4-4" />
 						<path d="m6 8-4 4 4 4" />
