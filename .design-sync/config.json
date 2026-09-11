@@ -1,0 +1,8 @@
+{
+  "projectId": "0cae4179-130b-4403-a198-7d0a24d2c903",
+  "pkg": "@codecanon/logos",
+  "shape": "package",
+  "globalName": "CodeCanonLogos",
+  "srcDir": "react",
+  "readmeHeader": ".design-sync/conventions.md"
+}
